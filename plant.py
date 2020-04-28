@@ -27,6 +27,5 @@ extractFrames('tenor.gif', 'tmp_files')
 
 while True:
     for i in range(nframes):
-        ctypes.windll.user32.SystemParametersInfoA(20, 0, "D:\\Desktop\\gif_as_wallpaper\\tmp_files\\"+str(i)+".jpg" , 3)
-        #print("D:\\Desktop\\gif_as_wallpaper\\output\\%d.jpg" % i)
+        ctypes.windll.user32.SystemParametersInfoA(20, 0, "tmp_files\\"+str(i)+".jpg" , 3)
         time.sleep(1/30) # FPS
